@@ -47,13 +47,6 @@ def generate(image):
 
 
 def save_text_to_files(text_for_images, predefined_folder):
-    """
-    Save Base64 representations of images to text files.
-
-    Parameters:
-    base64_images (list of dict): List containing dictionaries with image names and Base64 strings.
-    predefined_folder (str): Path to the folder where text files should be saved.
-    """
     # Create the folder if it doesn't exist
     if not os.path.exists(predefined_folder):
         os.makedirs(predefined_folder)
@@ -90,5 +83,3 @@ if __name__ == '__main__':
         text_for_images.append({'name': image['name'], 'text': response})
 
     save_text_to_files(text_for_images, output_folder_path)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
