@@ -75,9 +75,9 @@ def save_text_to_files(text_for_images, predefined_folder):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    vertexai.init(project="flash-ocean-209914")
-    input_folder_path = '/Users/madhavarora/Documents/Madhav/TechTeaching/Medium/Gemini Investigation/Images'
-    output_folder_path = '/Users/madhavarora/Documents/Madhav/TechTeaching/Medium/Gemini Investigation/handwritingToTextPython'
+    vertexai.init(project="project-name")
+    input_folder_path = 'path_to_images_with_handwritten_text'
+    output_folder_path = 'path_where_text_files_will_be_generated'
 
     images = read_images_from_folder(input_folder_path)
     base64_images = convert_to_base64(images)
